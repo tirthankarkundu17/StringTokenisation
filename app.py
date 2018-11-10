@@ -9,8 +9,8 @@ class FileReaderWriter:
 
     def readFile(self):
         print("Reading File "+self.filename)
-        data = open(self.filename, "r")
-        return data.read().encode('utf-8')
+        data = open(self.filename, "r" , encoding="utf8")
+        return data.read()
 
     def writeFile(self, string):
         print("Writing into File "+self.filename)
